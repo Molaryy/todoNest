@@ -1,17 +1,5 @@
-import { Injectable, NotFoundException } from "@nestjs/common";
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { Todo } from './interfaces/todo.interface';
-
-/*
- - pour le return this.todos, vue qu'on a spécifié le type
- de retour donc une interface Todo si il y un élément qui
- manque il y aura un problème.
-
- - Il y a une exception et c'est celle de la description
-  car dans l'interface on a précisé que la description
-  était facultatif
-
-  - [...this.todos] c'est pour faire une copie d'un tableau
-*/
 
 @Injectable()
 export class TodosService {

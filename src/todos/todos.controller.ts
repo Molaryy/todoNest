@@ -3,13 +3,6 @@ import { TodosService } from './todos.service';
 import { Todo } from './interfaces/todo.interface';
 import { TodoDTO } from './DTO/create-todo.dto';
 
-/*
- - localhost:3000/todos
- - readonly c'set parcque on sait que ça va pas être modifié
- - Body nous permets de récupère le body qui a été dans le serveur
- - Param c'est poue récupérer le paramètre qu'on  donne du genre /todos/param
-*/
-
 @Controller('todos')
 export class TodosController {
   constructor(private readonly todosService: TodosService) {}
