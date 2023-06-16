@@ -1,2 +1,2 @@
 # todoNest
-A simple todo-list to lean Node.js
+A simple todo-list to learn Node.js
